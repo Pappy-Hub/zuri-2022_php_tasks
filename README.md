@@ -14,6 +14,15 @@ It has the following
   - register.php which is meant to handle user registration
   - reset.php which is meant to reset user password
   - logout.php which is meant to handle user logout (destroy user session)
+## SETUP
+ - fork this repository to you accounts
+ - clone the repository to your local pc using `git clone <repository link here>`
+ - complete the exercise
+ - onces done, stage your changes using `git add <filename>`
+  - commit your changes using `git commit -m "commit message"
+  - push you change using `git push`
+
+  Once you are done, copy the link and paste as your submission.
 
 ## TASK:
 - With the provided code skeleton, you task is to complete the following files
