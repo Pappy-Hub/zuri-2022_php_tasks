@@ -13,4 +13,6 @@ function registerUser($username, $email, $password){
     
     // echo "OKAY";
 }
+echo "HANDLE THIS PAGE";
+
 

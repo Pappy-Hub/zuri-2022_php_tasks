@@ -14,3 +14,5 @@ function loginUser($email, $password){
     */
 }
 
+echo "HANDLE THIS PAGE";
+

@@ -20,10 +20,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item f-right">
-        <a class="nav-link" href="html/login.html">Login</a>
+        <a class="nav-link" href="forms/login.html">Login</a>
       </li>
       <li class="nav-item f-right">
-        <a class="nav-link " href="html/register.html">Register</a>
+        <a class="nav-link " href="forms/register.html">Register</a>
       </li>
   </div>
 </nav>
