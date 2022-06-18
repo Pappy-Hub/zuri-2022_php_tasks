@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
     <link rel="stylesheet" href="src/style.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -25,7 +24,11 @@
   </div>
 </nav>
 <div class="container justify-content-center">
-     <h1 class="">Welcome to Zuri Authentication `USERNAME`</h1>
+     <h1 class="">Welcome to Zuri Authentication <?php session_start(); if($_SESSION['username']){
+      echo $_SESSION['username'];
+     }
+     ?>
+     </h1>
 </div>
    
 </body>
