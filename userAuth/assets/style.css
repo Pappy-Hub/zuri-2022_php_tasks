@@ -14,7 +14,7 @@ form{
 h1{
     text-align: center;
 }
-nav.navbar-light{
+.navbar-light{
     background-color: rgb(242, 211, 170);
 }
 li{

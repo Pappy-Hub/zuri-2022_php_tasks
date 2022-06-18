@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(242, 211, 170);">
+            <a class="navbar-brand" href="#"><h2>PHP STUDENTS PORTAL</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item f-right">
+                    <a class="nav-link " href="../dashboard.php">DASHBOARD</a>
+                </li>
+    </div>
+    </nav>
 <?php
 
 require_once "../config.php";
@@ -66,8 +85,10 @@ function getusers(){
     <head></head>
     <body>
     <center><h1><u> ZURI PHP STUDENTS </u> </h1> 
-    <table border='1' style='width: 700px; background-color: magenta; border-style: none'; >
-    <tr style='height: 40px'><th>ID</th><th>Full Names</th> <th>Email</th> <th>Gender</th> <th>Country</th> <th>Action</th></tr>";
+    <table class='table table-bordered' border='0.5' style='width: 80%; background-color: smoke; border-style: none'; >
+    <tr style='height: 40px'>
+        <thead class='thead-dark'> <th>ID</th><th>Full Names</th> <th>Email</th> <th>Gender</th> <th>Country</th> <th>Action</th>
+    </thead></tr>";
     if(mysqli_num_rows($result) > 0){
         while($data = mysqli_fetch_assoc($result)){
             //show data
@@ -82,7 +103,7 @@ function getusers(){
                 <form action='action.php' method='post'>
                 <input type='hidden' name='id'" .
                  "value=" . $data['id'] . ">".
-                "<button type='submit', name='delete'> DELETE </button> </form> </td>".
+                "<button class='btn btn-danger' type='submit', name='delete'> DELETE </button> </form> </td>".
                 "</tr>";
         }
         echo "</table></table></center></body></html>";

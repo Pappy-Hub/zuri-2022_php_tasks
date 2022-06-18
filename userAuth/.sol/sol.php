@@ -37,7 +37,7 @@ function getusers(){
             echo "<html>
             <head></head>
             <body>
-                <table border='1' style='width: 700px;'><tr><td style='width: 50px'>" . $data['id'] . "</td>
+                <table class='table' border='1' style='width: 700px;'><tr><td style='width: 50px'>" . $data['id'] . "</td>
                 <td style='width: 150px'>" . $data['full_names'] .
                 "</td> <td style='width: 150px'>" . $data['email'] .
                 "</td> <td style='width: 150px'>" . $data['gender'] . 
