@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +56,9 @@ function loginUser($email, $password){
         header("Location: ../dashboard.php");
         }
     else{
-        echo "<script> alert('Incorrect Password') </script>";
+        header("Location: ../forms/login.php?message=invalid");
+        
+        
     }
 }
 
@@ -113,14 +116,15 @@ function getusers(){
 }
 
 function logout(){
+
     if($_SESSION['username'])
     {
         session_unset();
         session_destroy();
-        header("Location: ../forms/login.html");
+        header("Location: ../index.php?message=logout");
     }
     else{
-        header("Location: ../forms/login.html");
+        header("Location: ../forms/login.php");
     }
     
 }

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../assets/style.css">
 </head>
     <body>
-
-        <!-- Image and text -->
+        <div class="all">
+            <!-- Image and text -->
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="../index.php"><h2>PHP STUDENTS PORTAL</h2></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item f-right">
-                    <a class="nav-link " href="login.html">Login</a>
+                    <a class="nav-link " href="login.php">Login</a>
                 </li>
     </div>
     </nav>
@@ -65,13 +65,13 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary" name="register">Register</button>
-                    <a href="resetpassword.html" style="margin-left: 10%">Reset Password</a>
+                    <a href="resetpassword.php" style="margin-left: 10%">Reset Password</a>
                 </div>
             </div>
             
       </form>
    
     
+`   </div>
 </div>
-</body>
 </html>

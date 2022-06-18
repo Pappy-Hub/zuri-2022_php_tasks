@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-
-    <!-- Image and text -->
+  <div class="all">
+     <!-- Image and text -->
     <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#"><h2>ZURI-PHP</h2></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,18 +21,23 @@
     <ul class="navbar-nav">
       <li class="nav-item f-right">
       <form action="php/action.php" method="POST" style=" background-color: inherit">
-        <button type="submit" name="logout">Logout</button>
+        <button type="submit" name="logout" style="background-color: transparent; border: none">Logout</button>
      </form>
       </li>
   </div>
 </nav>
-<div class="container justify-content-center">
+<div class="justify-content-center"  style="color: white; margin-top:5%">
+
+<?php if(isset($_GET['message'])){
+  echo "<script> alert('You Just Logged Out')</script>";
+}
+?>
      <h1 class="">
        Welcome to Zuri Authentication 
        <?php session_start();
-        if(isset($_SESSION)){ echo $_SESSION['username'];} ?>
+        if(isset($_SESSION['username'])){ echo $_SESSION['username'];} ?>
     </h1>
-    <hr>
+    <br>
       <h2 style="align-content: center">
         Here is a list of Students, their emails and Countries, Happey to Contact them?!
       </h2>
@@ -45,6 +50,9 @@
      </form>
     
 </div>
+  </div>
+
+   
    
 </body>
 </html>
