@@ -2,7 +2,7 @@
 function logout(){
   
    session_start();
-   if($_SESSION['username']){
+   if($_SESSION){
        session_destroy();
        header('Location: ../index.php');
    }
