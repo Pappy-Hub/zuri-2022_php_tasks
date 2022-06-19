@@ -18,12 +18,9 @@ function resetPassword($email, $password){
            fclose($file);
            exit();
        }
-       else{
-           echo "<h2 style='color: green'>User Does Not Exist</h2>";
- 
-           fclose($file);
-       }
-   }
+
+    }
+    echo "<h2 style='color: red'>Email not found</h2>";
    //open file and check if the username exist inside
    //if it does, replace the password
 }

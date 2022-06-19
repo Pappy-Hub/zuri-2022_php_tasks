@@ -6,6 +6,7 @@ if(isset($_POST['submit'])){
 registerUser($username, $email, $password);
 }
 function registerUser($username, $email, $password){
+
    $form_data = array(
        'fullname' => $username,
        'email' => $email,
@@ -22,7 +23,7 @@ function registerUser($username, $email, $password){
 function checkIfUserExist($email){
        $file = fopen('../storage/users.csv', 'r');
        while(!feof($file)){
-           $line = fgetcsv($file);
+          $line = fgetcsv($file); 
            if($line[1] == $email){
                return true;
            }

@@ -14,7 +14,7 @@ function loginUser($email, $password){
        //check if the email and password match
        if($line[1] == $email && $line[2] == $password){
            //if they do, set the session variable
-           $_SESSION['username'] = $line[1];
+           $_SESSION['username'] = $line[0];
            //redirect to dashboard
            header('Location: ../dashboard.php');
        }   }

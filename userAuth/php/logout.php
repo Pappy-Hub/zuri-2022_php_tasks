@@ -9,6 +9,7 @@ function logout(){
  
    else{
        echo "You are not logged in";
+
    }
    /*
 Check if the existing user has a session
