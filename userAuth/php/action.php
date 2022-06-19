@@ -19,8 +19,8 @@ switch(true){
         loginUser($email, $password);
         break;
     case isset($_POST["reset"]):
-        $password = '';
-        $email = '';
+        $password = $_POST['password'];
+        $email = $_POST['email'];
         resetPassword($email, $password);
         break;
     case isset($_POST['logout']):
